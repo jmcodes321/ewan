@@ -11,15 +11,15 @@ moveRandom.addEventListener("mouseenter", function (e) {
 })
 
 document.addEventListener("DOMContentLoaded", function () {
-    const noButton = document.getElementById("move-random");
+    const yesButton = document.getElementById("move-random");
     const btnContainer = document.querySelector(".btn");
 
-    noButton.addEventListener("mouseenter", function (event) {
+    yesButton.addEventListener("mouseenter", function (event) {
         event.preventDefault();
 
         // Create a new "Yes" button
         const newYesButton = document.createElement("a");
-        newYesButton.textContent = "Yes";
+        newYesButton.textContent = "No";
         newYesButton.href = "yes.html";
         newYesButton.style.position = "absolute";
         newYesButton.style.left = Math.random() * window.innerWidth + "px";
