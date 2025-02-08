@@ -6,7 +6,7 @@ function moveRandomE1(elm) {
 
 const moveRandom = document.querySelector("#move-random");
 
-moveRandom.addEventListener("mouseenter", function (e) {
+moveRandom.addEventListener("onclick", function (e) {
     moveRandomE1(e.target);
 })
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const yesButton = document.getElementById("move-random");
     const btnContainer = document.querySelector(".btn");
 
-    yesButton.addEventListener("mouseenter", function (event) {
+    yesButton.addEventListener("onclick", function (event) {
         event.preventDefault();
 
         // Create a new "Yes" button
